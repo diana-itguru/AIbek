@@ -1,0 +1,169 @@
+body{
+  background-color: #082567;
+}
+
+.landing {
+  background-color: #082567;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing__container {
+  background-color: #082567;
+  height: 100vh;
+  width: 600px;
+  position: relative;
+  padding: 30px 65px;
+  overflow: hidden;
+}
+
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.landing {
+    height: 100vh;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.landing__container {
+  background-color: #082567;
+  height: 800px;
+  width: 600px;
+  position: relative;
+  padding: 30px 65px;
+}
+
+.landing__avatar {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 64px auto 0;
+}
+
+.landing__title {
+  color: aliceblue;
+  font-family: "Light", Helvetica, serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  width: 455px;
+  margin: 0 80px;
+  line-height: normal;
+}
+
+.landing__title-accent {
+  font-family: "Inter-SemiBold", Helveticaб serif;
+  font-weight: 600;
+}
+
+.landing__actions {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 276px;
+}
+
+.landing__button {
+  position: relative;
+  z-index: 1000 !important;
+  cursor: pointer;
+  background-color: #082567;
+  padding: 10px;
+  font-family: "Inter-Regular", Helvetica, serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  min-width: 130px;
+  height: 50px;
+  margin: -50px 20px 20px;
+  border: 1px solid #ffffff;
+}
+
+.landing__button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);;
+}
+
+.landing__button:active{
+  transform: scale(0.98);
+}
+
+.landing__button--secondary {
+  min-width: 190px;
+}
+
+.landing__description {
+  color: aliceblue;
+  font-family: "Inter-LightItalic", Helvetica, serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  width: 430px;
+  margin: -250px 80px;
+  line-height: normal;
+}
+
+.landing__container{
+  position: relative;
+  z-index: 1;
+}
+
+/* Контейнер для орнаментов */
+.ornaments-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Общие стили орнаментов */
+.ornament {
+  position: absolute;
+  width: 200px; /* Увеличиваем размер */
+  height: 200px;
+  object-fit: contain;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 3.0));
+}
+
+/* Позиционирование с учетом новых размеров */
+.ornament_1 { /* Левый верхний */
+  top: 20px;
+  left: 0;
+}
+
+.ornament_2 { /* Правый верхний */
+  top: 20px;
+  right: 0;
+}
+
+.ornament_3 { /* Правый нижний */
+  bottom: 20px;
+  right: 0;
+}
+
+.ornament_4 { /* Левый нижний */
+  bottom: 20px;
+  left: 0;
+}
+
+.landing__container {
+  transform: scale(0.9); /* Масштабируем весь контейнер */
+  transform-origin: center;
+}
